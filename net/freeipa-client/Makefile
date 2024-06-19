@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	${PY_SETUPTOOLS} \
 		${PYTHON_PKGNAMEPREFIX}pip>0:devel/py-pip@${PY_FLAVOR}
 
-BUILD_DEPENDS+= samba416>0:net/samba41 \
+BUILD_DEPENDS+= samba416>0:net/samba416 \
 		talloc>0:devel/talloc \
 		sssd2>0:security/sssd2
 
