@@ -1,9 +1,13 @@
 --- daemons/ipa-kdb/ipa_kdb.c    2023-08-21 14:29:11.264700960 +0000
 +++ daemons/ipa-kdb/ipa_kdb.c        2024-06-14 10:29:21.726567000 +0000
-@@ -20,8 +20,10 @@
+@@ -20,8 +20,14 @@
   * along with this program.  If not, see <http://www.gnu.org/licenses/>.
   */
  
++#define __BSD_VISIBLE 1
++#include <sys/types.h>
++#undef __BSD_VISIBLE
++
 +#include <sys/time.h>
  #include <talloc.h>
  #include <sys/utsname.h>
