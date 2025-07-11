@@ -55,6 +55,6 @@ PLIST_SUB=	DISTVERSION=${DISTVERSION}
 # Make sample configuration file
 post-install:
 	@${MV} ${STAGEDIR}${PREFIX}/etc/ipa/epn.conf ${STAGEDIR}${PREFIX}/etc/ipa/epn.conf.sample
-	@${CP} ${WRKDIR}/freeipa-4.11.0/daemons/ipa-sam/.libs/ipasam.so ${STAGEDIR}${PREFIX}/lib
+	@${CP} ${WRKDIR}/freeipa-${DISTVERSION}/daemons/ipa-sam/.libs/ipasam.so ${STAGEDIR}${PREFIX}/lib
 
 .include <bsd.port.mk>
